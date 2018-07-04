@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'chatbox' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  use_frameworks!
+  pod 'Applozic', '~>4.0.1'
+
+  # Pods for chatbox
+
+  target 'chatboxTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'chatbox-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for chatbox-tvOS
+
+  target 'chatbox-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
